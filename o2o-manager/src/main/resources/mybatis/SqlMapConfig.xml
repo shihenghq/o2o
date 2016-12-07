@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//config.mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+  <!-- 全局 setting 的配置，根据需要进行配置，如Lazy Loading、二级缓存等 -->
+
+  <!-- 别名的配置 -->
+  <typeAliases>
+    <!-- 批量扫描别名 -->
+    <package name="com.o2o.manager.model" />
+  </typeAliases>
+
+  <!-- 配置 mapper
+   由于使用的是在 spring 和 config.mybatis 的整合包中配置的批量扫描 mapper，
+   所以此处不需要配置了。但需要遵循一定的规则：mapper.java 和 mapper.xml 同名且在同一个目录下。
+   <mappers>
+   </mappers>
+  -->
+
+  <plugins>
+    <!-- com.github.pagehelper为PageHelper类所在包名 -->
+    <plugin interceptor="com.o2o.iteam.common.PageHelper">
+      <property name="dialect" value="mysql" />
+      <!-- 该参数默认为false -->
+      <!-- 设置为true时，会将RowBounds第一个参数offset当成pageNum页码使用 -->
+      <!-- 和startPage中的pageNum效果一样 -->
+      <property name="offsetAsPageNum" value="true" />
+      <!-- 该参数默认为false -->
+      <!-- 设置为true时，使用RowBounds分页会进行count查询 -->
+      <property name="rowBoundsWithCount" value="true" />
+    </plugin>
+  </plugins>
+
+  <mappers>
+    <!-- maven 的目录结构下的resources为classpath
+    <mapper resource="config/mybatis/mapper/ItemsCustomMapper.xml" />
+    <mapper resource="config/mybatis/mapper/ItemsMapper.xml" />
+    <mapper resource="config/mybatis/mapper/OrderDetailMapper.xml" />
+    <mapper resource="config/mybatis/mapper/OrdersMapper.xml" /> -->
+    <mapper resource="mybatis/sys/OrganizationMapper.xml" />
+    <mapper resource="mybatis/sys/role/RoleMapper.xml" />
+    <mapper resource="mybatis/sys/role/UserRoleMapper.xml" />
+    <mapper resource="mybatis/sys/user/UserMapper.xml" />
+    <mapper resource="mybatis/sys/resource/ResourceMapper.xml" />
+  </mappers>
+
+
+</configuration>

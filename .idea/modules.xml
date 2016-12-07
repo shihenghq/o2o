@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/o2o.iml" filepath="$PROJECT_DIR$/o2o.iml" />
+      <module fileurl="file://$PROJECT_DIR$/o2o-manager/o2o-manager.iml" filepath="$PROJECT_DIR$/o2o-manager/o2o-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/o2o-manager-core/o2o-manager-core.iml" filepath="$PROJECT_DIR$/o2o-manager-core/o2o-manager-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/o2o-portal/o2o-portal.iml" filepath="$PROJECT_DIR$/o2o-portal/o2o-portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/o2o-portal-core/o2o-portal-core.iml" filepath="$PROJECT_DIR$/o2o-portal-core/o2o-portal-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/o2o-res/o2o-res.iml" filepath="$PROJECT_DIR$/o2o-res/o2o-res.iml" />
+    </modules>
+  </component>
+</project>

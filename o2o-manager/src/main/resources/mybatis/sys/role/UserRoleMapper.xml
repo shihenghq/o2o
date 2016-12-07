@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.o2o.manager.mapper.sys.role.UserRoleMapper">
+
+  <select id="findRoleResourcesByRoleCode" resultType="java.util.List">
+    SELECT * FROM SYS_ROLE
+  </select>
+
+  <select id="findRolesByUserCode" resultType="java.lang.String">
+    SELECT
+    ROLE_CODE AS ROLEID
+    FROM SYS_USER_ROLE
+    WHERE USER_CODE = #{CODE}
+  </select>
+</mapper>

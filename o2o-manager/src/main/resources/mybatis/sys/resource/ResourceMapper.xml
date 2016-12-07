@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.o2o.manager.mapper.sys.resource.ResourceMapper">
+  <select id="listData" resultType="com.o2o.manager.model.sys.resource.ResourceModel">
+    SELECT * FROM SYS_RESOURCE
+  </select>
+
+  <insert id="insert" parameterType="com.o2o.manager.model.sys.resource.ResourceModel">
+    INSERT INTO SYS_RESOURCE (CODE,PARENT_CODE,ICON,TITLE,DESCRIPTION,SCOPE,LEVEL_CODE,LEVEL,LEAF,URL,TYPE,ENABLED,CREATE_TIME,SEQ)
+     VALUES
+     (
+     #{code},#{parent_code},#{icon},#{title},#{description},#{scope},#{level_code},#{level},#{leaf},#{url},#{type},false,#{create_time},0
+     )
+  </insert>
+
+</mapper>

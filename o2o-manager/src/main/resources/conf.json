@@ -1,0 +1,16 @@
+{
+  "DEBUG": true,
+  "PERMISSION_LEVEL": "MODULE",
+  "INIT_MENU": false,
+  "RCB_IDCARD": "123123123123123123",
+  "BANK.HTTP": "http://172.30.134.139/p2p-bank/service",
+  "FILE_SERVER": "http://172.30.134.139",
+  "BANK.KEY_HMAC": "c56Yl689MHW2z62EcJSLDQ==",
+  "BANK.KEY_AES": "c56Yl689MHW2z62EcJSLDQ==",
+  "SMS": {
+    "info": "短信网关",
+    "HTTP": "http://172.30.134.139/p2p-sms-gateway/service",
+    "KEY_AES": "c56Yl689MHW2z62EcJSLDQ==",
+    "KEY_HMAC": "c56Yl689MHW2z62EcJSLDQ=="
+  }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.o2o.manager.mapper.sys.role.RoleMapper">
+  <select id="listData" resultType="com.o2o.manager.model.sys.role.RoleModel">
+    SELECT * FROM SYS_ROLE
+  </select>
+
+  <select id="findRoleResourcesByRoleCode" resultType="java.util.HashMap" parameterType="java.lang.String">
+    SELECT B.CODE,C.URL FROM sys_role A
+    LEFT JOIN sys_role_resource B
+    ON A.CODE=B.ROLE_CODE
+    LEFT JOIN sys_resource C
+    ON B.RESOURCE_CODE = C.CODE
+    WHERE A.CODE= #{CODE}
+  </select>
+
+</mapper>

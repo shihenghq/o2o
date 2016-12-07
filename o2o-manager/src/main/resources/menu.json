@@ -1,0 +1,257 @@
+[
+  {
+    "code": "M00",
+    "title": "隐藏功能",
+    "auth": false,
+    "show": false,
+    "seq": 0
+  },
+  {
+    "code": "M01",
+    "title": "系统管理",
+    "auth": true,
+    "show": true,
+    "seq": 1,
+    "sub": [
+      {
+        "code": "M0101",
+        "title": "组织机构",
+        "auth": true,
+        "show": true,
+        "seq": 1
+      },
+      {
+        "code": "M0102",
+        "title": "运维管理",
+        "auth": true,
+        "show": true,
+        "seq": 2
+      },
+      {
+        "code": "M0103",
+        "title": "个人设置",
+        "auth": true,
+        "show": true,
+        "seq": 3
+      }
+    ]
+  },
+  {
+    "code": "M02",
+    "title": "基础设置",
+    "auth": true,
+    "show": true,
+    "seq": 2,
+    "sub": [
+      {
+        "code": "M0210",
+        "title": "风险投资",
+        "auth": true,
+        "show": true,
+        "seq": 1
+      },{
+        "code": "M0211",
+        "title": "个贷基本设置",
+        "auth": true,
+        "show": true,
+        "seq": 1
+      }
+    ]
+  },
+  {
+    "code": "M03",
+    "title": "项目管理",
+    "auth": true,
+    "show": true,
+    "seq": 3,
+    "sub": [
+      {
+        "code": "M0301",
+        "title": "借款管理",
+        "auth": true,
+        "show": true,
+        "seq": 1
+      },
+      {
+        "code": "M0302",
+        "title": "发标管理",
+        "auth": true,
+        "show": true,
+        "seq": 2
+      },
+      {
+        "code": "M0303",
+        "title": "项目管理",
+        "auth": true,
+        "show": true,
+        "seq": 2
+      }
+    ]
+  },
+  {
+    "code": "M04",
+    "title": "资金管理",
+    "auth": true,
+    "show": true,
+    "seq": 4,
+    "sub": [
+      {
+        "code": "M0401",
+        "title": "放款管理",
+        "auth": true,
+        "show": true,
+        "seq": 1
+      },
+      {
+        "code": "M0402",
+        "title": "还款管理",
+        "auth": true,
+        "show": true,
+        "seq": 2
+      },
+      {
+        "code": "M0403",
+        "title": "垫付管理",
+        "auth": true,
+        "show": true,
+        "seq": 3
+      },
+      {
+        "code": "M0404",
+        "title": "提前还款",
+        "auth": true,
+        "show": true,
+        "seq": 4
+      }
+    ]
+  },
+  {
+    "code": "M05",
+    "title": "会员管理",
+    "auth": true,
+    "show": true,
+    "seq": 5,
+    "sub": [
+      {
+        "code": "M0501",
+        "title": "会员查询",
+        "auth": true,
+        "show": true,
+        "seq": 1
+      },
+      {
+        "code": "M0502",
+        "title": "会员分类管理",
+        "auth": true,
+        "show": true,
+        "seq": 2
+      },
+      {
+        "code": "M0504",
+        "title": "会员解绑管理",
+        "auth": true,
+        "show": true,
+        "seq": 4
+      },
+      {
+        "code": "M0507",
+        "title": "自动投标",
+        "auth": true,
+        "show": true,
+        "seq": 5
+      },
+      {
+        "code": "M0508",
+        "title": "手工绑卡",
+        "auth": true,
+        "show": true,
+        "seq": 6
+      }
+    ]
+  },
+  {
+    "code": "M06",
+    "title": "内容管理",
+    "auth": true,
+    "show": true,
+    "seq": 6,
+    "sub": [
+      {
+        "code": "M0601",
+        "title": "文章管理",
+        "auth": true,
+        "show": true,
+        "seq": 1
+      }
+    ]
+  },
+  {
+    "code": "M07",
+    "title": "报表管理",
+    "auth": true,
+    "show": true,
+    "seq": 7,
+    "sub": [
+      {
+        "code": "M0701",
+        "title": "会员信息统计表",
+        "auth": true,
+        "show": true,
+        "seq": 1
+      },
+      {
+        "code": "M0702",
+        "title": "投资项目统计表",
+        "auth": true,
+        "show": true,
+        "seq": 2
+      },
+      {
+        "code": "M0703",
+        "title": "项目管理统计表",
+        "auth": true,
+        "show": true,
+        "seq": 2
+      }
+    ]
+  },
+  {
+    "code": "M08",
+    "title": "融资项目管理",
+    "auth": true,
+    "show": true,
+    "seq": 7,
+    "sub": [
+      {
+        "code": "M0801",
+        "title": "个贷管理",
+        "auth": true,
+        "show": true,
+        "seq": 1,
+        "sub": [
+          {
+            "code": "M080101",
+            "title": "个贷业务审核",
+            "auth": true,
+            "show": true,
+            "seq": 1
+          },
+          {
+            "code": "M080103",
+            "title": "发标确认",
+            "auth": true,
+            "show": true,
+            "seq": 1
+          },
+          {
+            "code": "M080104",
+            "title": "个贷业务查询",
+            "auth": true,
+            "show": true,
+            "seq": 1
+          }
+        ]
+      }
+    ]
+  }
+]

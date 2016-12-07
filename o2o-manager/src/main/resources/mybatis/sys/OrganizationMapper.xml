@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.o2o.manager.mapper.sys.OrganizationMapper">
+<select id="findOrganizations" resultType="com.o2o.manager.model.sys.OrganizationModel">
+  SELECT * FROM SYS_ORGANIZATION
+</select>
+</mapper>
